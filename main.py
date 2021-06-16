@@ -11,6 +11,7 @@ from weapinfo import *
 
 client = commands.Bot(command_prefix='$')
 client.remove_command("help")
+TOKEN = os.getenv("DISCORD_TOKEN")
 
 @client.event
 async def on_ready():
@@ -4308,4 +4309,4 @@ async def polearm(ctx, *, weap_name):
 			await message.clear_reactions()
 			break
 			
-client.run(os.getenv('DISCORD_TOKEN'))
+client.run(TOKEN)
