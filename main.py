@@ -4308,4 +4308,4 @@ async def polearm(ctx, *, weap_name):
 			await message.clear_reactions()
 			break
 			
-client.run(os.getenv('TOKEN'))
+client.run(os.getenv('DISCORD_TOKEN'))
